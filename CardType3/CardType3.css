@@ -1,0 +1,87 @@
+.cardType3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardType3__header{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardType3-head {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;   
+}
+
+.cardType3-head_catch {
+    background-color: var(--color-h);
+    padding: 0.5rem 1rem;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.cardType3__header-buttonContainer{
+    margin-top: auto;
+    margin-bottom: 1rem;
+}
+
+.radiobutton-input {
+    visibility: hidden;
+}
+
+.custom-radiobutton {
+    background-color: var(--color-accent);
+    width: 39px;
+    height: 3px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.radiobutton-input:checked+.custom-radiobutton {
+    background-color: var(--color-h);
+}
+
+.cardType3-container {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.cardType3-btn {
+    background-color: var(--color-h);
+    padding: 1.1rem;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+.cardType3-monthlyPayment {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-accent);
+}
+
+.cardType3-container .cardType3-monthlyPayment {
+    display: none;
+}
+
+@media screen and (max-width: 650px) {
+    .cardType3__header{
+        height: 330px;
+    } 
+
+    .cardType3-container .cardType3-monthlyPayment {
+        display: block;
+    }
+
+    .cardType3-btn .cardType3-monthlyPayment {
+        display: none;
+    }
+}
